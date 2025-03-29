@@ -1,0 +1,18 @@
+@use '@styles/variables';
+
+.stat__counter{
+  position: relative;
+}
+
+.stat__color{
+  stroke:variables.$clr-primary-400;
+}
+
+.stat__count{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left:50%;
+  top:50%;
+
+  font-size: variables.$fs-l;
+}

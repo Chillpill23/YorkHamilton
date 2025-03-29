@@ -1,0 +1,38 @@
+// Font Family
+$ff-main:"Raleway", sans-serif;
+$ff-sub:"Inter", sans-serif;
+
+// Font Sizes
+$fs-xxl: clamp(2rem, 5vw, 2.986rem);
+$fs-xl: clamp(1.8rem, 4.5vw, 2.488rem);
+$fs-l: clamp(1.6rem, 4vw, 2.074rem);
+$fs-m: clamp(1.4rem, 3.5vw, 1.728rem);
+$fs-s: clamp(1.2rem, 3vw, 1.44rem);
+$fs-xs: clamp(1rem, 2.5vw, 1.2rem);
+$fs-body: clamp(0.875rem, 2vw, 1rem);
+$fs-sub:clamp(0.6rem, 1.5vw, 0.833rem);
+
+//Colors
+$clr-primary:#D4402C;
+$clr-primary-900:#C4321E;
+$clr-primary-400:#FF5956;
+$clr-primary-200:#FF9071;
+$clr-primary-100:#FFC0B7;
+
+$clr-secondary:#ED973C;
+$clr-secondary-900:#E0811B;
+$clr-secondary-400:#FFB260;
+$clr-secondary-200:#FFCB93;
+$clr-secondary-100:#FFE0BF;
+
+$clr-neutral-800:#4E4E51;
+$clr-neutral-600:#212121;
+$clr-neutral-500:#acacac;
+$clr-neutral-400:#D7D7D7;
+$clr-neutral-200:#FAFAFA;
+$clr-neutral:#f5f5f5;
+
+$highlight: #FF724B;
+$highlight2: #CC4634;
+
+$shadow: 0 5px 30px rgba(63, 63, 63, 0.15);

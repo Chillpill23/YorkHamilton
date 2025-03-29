@@ -1,0 +1,35 @@
+@use "@styles/variables";
+@use "@styles/mixins" as *;
+
+button{
+  @include flex-center;
+  gap: 0.5rem;
+
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+
+  font-size: variables.$fs-body;
+  font-weight: 500;
+
+  cursor:pointer;
+
+  transition:0.2s ease all;
+}
+
+.primary{
+  background-color: variables.$clr-primary;
+  color:variables.$clr-neutral;
+  border:3px solid variables.$clr-primary;
+
+  @media screen and (min-width:768px) {
+    padding:0.8rem 1.5rem
+  }
+
+  &:hover{
+    background-color:transparent;
+  }
+}
+
+.secondary{
+  color:variables.$clr-primary-900;
+}
