@@ -1,0 +1,39 @@
+@use '@styles/variables';
+@use '@styles/mixins' as *;
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 5rem;
+  @include flex-center;
+
+  .carousel__wrapper {
+    position: absolute;
+    @include flex-center;
+    gap: 3rem;
+
+    .carousel__images {
+      padding: 1rem;
+      display: flex;
+      gap: 5rem;
+      animation: swipe var(--speed) linear infinite backwards;
+  
+      .image img{
+        max-height: 2rem;
+      }
+    }
+  }
+}
+
+
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

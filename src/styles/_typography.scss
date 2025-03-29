@@ -1,0 +1,47 @@
+@use "mixins";
+@use "variables"; 
+
+h1, h2, h3 {
+  font-family: variables.$ff-main; 
+}
+
+h4, h5, h6, p, small {
+  font-family: variables.$ff-sub;
+}
+
+
+h1 {
+  @include mixins.fluid-font(2rem, 5vw, 3rem); 
+  // 32px - 47.78px
+}
+
+h2 {
+  @include mixins.fluid-font(1.9rem, 4.5vw, 2.688rem); // 28.8px - 39.81px
+}
+
+h3 {
+  @include mixins.fluid-font(1.6rem, 4vw, 2.274rem); // 25.6px - 33.18px
+}
+
+h4 {
+  @include mixins.fluid-font(1.4rem, 3.5vw, 1.5rem); // 22.4px - 27.65px
+  font-weight: 600;
+}
+
+h5 { 
+  @include mixins.fluid-font(1.2rem, 3vw, 1.44rem); // 19.2px - 23.04px
+}
+
+h6 { 
+  @include mixins.fluid-font(1rem, 2.5vw, 1.2rem); // 16px - 19.2px
+}
+
+p { 
+  @include mixins.fluid-font(0.9rem, 2vw, 1.05rem); // 14px - 16px
+  line-height: 26px;
+}
+
+
+small { 
+  @include mixins.fluid-font(0.875rem, 1.5vw, 1rem); 
+}

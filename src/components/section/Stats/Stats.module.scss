@@ -1,0 +1,35 @@
+@use '@styles/variables';
+@use '@styles/mixins';
+
+
+.stats{
+  background-color:variables.$clr-neutral-600;
+  color: variables.$clr-neutral-400;
+
+  .stats__content{
+    @include mixins.flex-center;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media screen and (min-width:992px) {
+      flex-direction: row;
+    }
+
+    .stats__card{
+      @include mixins.flex-center;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      flex: 4;
+
+      h4{
+        font-family: variables.$ff-main;
+        letter-spacing: 1px;
+      }
+
+      p{
+        color:variables.$clr-neutral-400;
+      }
+    }
+  }
+}

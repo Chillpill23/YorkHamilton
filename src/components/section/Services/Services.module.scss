@@ -1,0 +1,28 @@
+@use '@styles/variables';
+@use '@styles/mixins' as *;
+
+.services{
+  @include flex-center;
+  flex-direction: column;
+  gap:3rem;
+
+  .services__content{
+    @include flex-center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 2rem;
+    padding:1rem 0.5rem;
+  
+    @media screen and (min-width:992px) {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
+  button{
+    &:hover{
+      color:variables.$clr-primary;
+    }
+  }
+}
+
